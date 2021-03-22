@@ -1,0 +1,237 @@
+body, html {
+  height: 100%;
+  margin: 0;
+
+overflow-x: hidden; 
+}
+#img-bkg{
+  background-image: url('resource/img/background.jpg');
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+body {
+  padding: 0;
+  margin: 0;
+  min-height: 500vh;
+  background-color: rgb(192,192,192);
+  animation: body 1s linear;
+}
+@keyframes body {
+  to {
+    background-color: rgb(255,255,255);
+  }
+}
+
+.progress {
+  height: 3px;
+  width: 0%;
+  visibility: hidden;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  animation: progress 1s linear;
+}
+@keyframes progress {
+  to {
+    background-color: rgb(20, 255, 226);
+    width: 100%;
+  }
+}
+
+:root * {
+  /* Pause the animation */
+  animation-play-state: paused;
+  /* Bind the animation to scroll */
+  animation-delay: calc(var(--scroll) * -1s);
+  /* These last 2 properites clean up overshoot weirdness */
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
+.img-center{
+	height: 90%;
+	width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+nav{
+	overflow: hidden;
+	position: fixed;
+	color: #000011;
+	text-shadow: 1px 1px #000011;
+
+}
+#glr-bg{
+  
+}
+#glr-bg img{
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+  object-fit: contain
+  background-repeat: no-repeat;
+  border-color: #000;
+  border: 2px solid;
+
+}
+#glr-bg img:hover{
+ display: block;
+ overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5);
+
+}
+body.hovered {background: #ff0;}
+/* Colorize-zoom Container */
+.colorize-img img {
+  transition: transform .5s, filter .5s ease-in-out;
+  filter: grayscale(100%);
+}
+
+/* The Transformation */
+.colorize-img:hover img {
+  filter: grayscale(0);
+  transform: scale(0.5);
+}
+nav nav-item:hover{
+	text-shadow: 2px 2px #eb8188;
+}
+@media (min-width: 800px) and (max-width: 850px) {
+        .navbar:not(.top-nav-collapse) {
+            background: #1C2331!important;
+        }
+    }
+.view,body,html{height:100%}.navbar{background-color:rgba(0,0,0,.4)}.page-footer,.top-nav-collapse{background-color:#1C2331}
+@media only screen and (max-width:768px){.navbar{background-color:#1C2331}}
+.hr{
+	background: #c2232d;
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: "Lucida Console", Monaco, monospace;
+  text-transform: capitalize;
+}
+.castellar {
+    color: #c2232d;
+    text-shadow: -1px 0 0 #000000, 1px 1px 0 #000000,
+             2px -1px 0 #000000, 3px 0 0 #000000;
+}
+
+#footer{
+	background-image: url('resource/img/footer.jpg');
+  background-position: right bottom, left top;
+  background-repeat: no-repeat, repeat;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  border-radius: 20px;
+  color: white;
+}
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+#card-gb
+{
+  background-image: url('resource/img/frame.png');
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#roundcorners {
+  border-radius: 15px 50px 30px;
+  background: #73AD21;
+  padding: 20px; 
+  width: 200px;
+  height: 150px; 
+}
+#roundshape{
+  border-radius: 120px;
+  padding: 20px; 
+  width: 100px;
+  height: 150px; 
+    position: relative;
+  text-align: center;
+  color: white;
+  align-content: center;
+box-shadow: 0 10px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+      transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+  padding: 14px;
+  cursor: pointer;
+}
+#services img{
+  padding: 20px;
+  background-repeat: no-repeat;
+
+  align-content: center;
+}
+#services img:hover {
+  opacity: 0.2;
+}
+#services .card{
+    align-content: center;
+    border-style: solid;
+    border: 4px solid;
+    border-color: #c2232d;
+    background-color: #eb8188;
+  cursor: pointer;
+}
+#services .card:hover{
+     transform: scale(1.05);
+     background-color: #fff;
+    border: 3px solid;
+    color: #c2232d;
+    border-color: #000;
+  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+
+}
+.una {
+  text-align: center;
+  display: block;
+  line-height: 1px;
+  height: 1px;
+  margin: 2rem 0;
+  background: #B3B04F;
+}
+.una:before, .una:after {
+  content: '\2021';
+  font-size: 2rem;
+  color: #B3B04F;
+  position: absolute;
+  transform: rotate(90deg);
+}
+.una:before {
+  left:0;
+}
+.una:after {
+  right: 0;
+}
